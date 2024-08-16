@@ -17,6 +17,7 @@ class MyApp extends StatelessWidget {
       },
       child: MaterialApp(
         title: 'Namer App',
+        debugShowCheckedModeBanner: false,
         theme: ThemeData(
           useMaterial3: true,
           colorScheme: ColorScheme.fromSeed(
@@ -109,7 +110,7 @@ class _MyHomePageState extends State<MyHomePage> {
         page = GeneratorPage();
         break;
       case 1:
-        page = Placeholder();
+        page = FavouritesPage();
         break;  
       default:
         throw UnimplementedError('no widget for $selectedIndex');  
@@ -124,7 +125,7 @@ class _MyHomePageState extends State<MyHomePage> {
             children: [
               SafeArea(
                   child: NavigationRail(
-                extended: constraints.maxWidth >=600,
+                extended: constraints.maxWidth >=600 ,
                 destinations: const [
                   NavigationRailDestination(
                     icon: Icon(Icons.home),
@@ -198,6 +199,31 @@ class GeneratorPage extends StatelessWidget {
   }
 }
 
+class FavouritesPage extends StatelessWidget{
+  @override
+  Widget build(BuildContext context) {
+    var appState = context.watch<MyAppState>();
+
+    if(appState.favorites.isEmpty){
+      return Center(
+        child: Text('No favourites yet'),
+      );
+    }
+    return ListView(
+      children: [
+        Padding(padding: const EdgeInsets.all(20),
+        child: Text('you have '
+        '${appState.favorites.length} favourites:'
+        ),),
+        for (var pair in appState.favorites)
+          ListTile(
+            leading: Icon(Icons.favorite),
+            title: Text(pair.asLowerCase),
+          ),
+      ],
+    );
+  }
+}
 class BigCard extends StatelessWidget {
   const BigCard({
     super.key,

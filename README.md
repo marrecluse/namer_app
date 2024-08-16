@@ -2,6 +2,15 @@
 
 The **Namer App** is a simple yet powerful application designed to help users discover and save unique English words. The app features an intuitive interface that suggests random words, which users can explore and add to their personalized favorites list for future reference. This project is a comprehensive exercise in building high-quality Flutter applications with a focus on modern development practices.
 
+## Screenshots:
+
+### Home Screen
+![Alt text](screenshots/Screenshot%20from%202024-08-16%2011-33-24.png)
+
+### Favourites Screen
+![Alt text](screenshots/Screenshot%20from%202024-08-16%2011-33-46.png)
+
+
 
 ## Key Features:
 - **Word Suggestions**: The app provides users with a variety of randomly generated English words, encouraging exploration and learning.
