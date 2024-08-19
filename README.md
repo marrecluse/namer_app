@@ -5,10 +5,18 @@ The **Namer App** is a simple yet powerful application designed to help users di
 ## Screenshots:
 
 ### Home Screen
+
 ![Alt text](screenshots/Screenshot%20from%202024-08-16%2011-33-24.png)
+![Alt text](screenshots/Screenshot%20from%202024-08-20%2003-32-25.png)
 
 ### Favourites Screen
 ![Alt text](screenshots/Screenshot%20from%202024-08-16%2011-33-46.png)
+![Alt text](screenshots/Screenshot%20from%202024-08-20%2003-32-36.png)
+
+### Responsive For Small Screens
+![Alt text](screenshots/Screenshot%20from%202024-08-20%2003-33-31.png)
+![Alt text](screenshots/Screenshot%20from%202024-08-20%2003-33-43.png)
+
 
 
 
